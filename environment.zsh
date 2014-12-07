@@ -13,7 +13,12 @@ then
 fi
 
 # I use 256 color capable terminals everywhere.
-export TERM=xterm-256color
+if [[ -n "$TMUX" ]]
+then
+    export TERM=screen-256color
+else
+    export TERM=xterm-256color
+fi
 
 # Some applications I use.
 export BROWSER=firefox
