@@ -28,3 +28,5 @@ alias gadd='git add'
 alias gpush='git push'
 alias gpull='git pull'
 alias gcommit='git commit'
+
+alias rot13="tr a-zA-Z n-za-mN-ZA-M <<<"
