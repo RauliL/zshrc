@@ -19,7 +19,6 @@ alias x='exit'
 
 # Convenience
 alias cp='nocorrect cp -i'
-alias ls='ls --color=auto -p'
 alias mkdir='nocorrect mkdir -p'
 alias mv='nocorrect mv -i'
 alias vi='vim'

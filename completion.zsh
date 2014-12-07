@@ -5,7 +5,7 @@ _my_tab_completion()
     if [[ "${BUFFER}" == "" ]]
     then
         echo ""
-        eval "ls --color=auto -p"
+        eval "ls"
         zle accept-line
     else
         zle expand-or-complete
