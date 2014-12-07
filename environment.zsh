@@ -7,22 +7,8 @@ HISTFILE=$ZSH_CACHE/history
 HISTSIZE=10000
 SAVEHIST=10000
 
-if [[ ! -d $ZSH_CACHE ]]
-then
-    mkdir -p $ZSH_CACHE
-fi
-if [[ -d $HOME/bin ]]
-then
-    export PATH="$PATH:$HOME/bin"
-fi
-
-# I use 256 color capable terminals everywhere.
-#if [[ -n "$TMUX" ]]
-#then
-#    export TERM=screen-256color
-#else
-#    export TERM=xterm-256color
-#fi
+[[ ! -d $ZSH_CACHE ]] && mkdir -p $ZSH_CACHE
+[[ -d $HOME/bin ]] && export PATH="$PATH:$HOME/bin"
 
 # Some applications I use.
 export BROWSER=firefox
