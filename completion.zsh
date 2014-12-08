@@ -1,6 +1,6 @@
-autoload -Uz compinit && compinit
-
 [[ -d $ZSH_CONFIG/completion.d ]] && fpath=($ZSH_CONFIG/completion.d $fpath)
+
+autoload -Uz compinit && compinit
 
 _my_tab_completion()
 {
