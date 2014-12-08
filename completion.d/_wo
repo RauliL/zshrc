@@ -1,0 +1,16 @@
+#compdef wo
+
+_wo()
+{
+    local -a projects
+    projects=($(find $HOME/Projektit -mindepth 1 -maxdepth 1 -type d -printf '%f\n'))
+
+    if (( CURRENT == 2 ))
+    then
+        _describe -t projects "projects" projects
+    fi
+
+    return 0
+}
+
+_wo

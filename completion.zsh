@@ -1,5 +1,7 @@
 autoload -Uz compinit && compinit
 
+[[ -d $ZSH_CONFIG/completion.d ]] && fpath=($ZSH_CONFIG/completion.d $fpath)
+
 _my_tab_completion()
 {
     if [[ "${BUFFER}" == "" ]]

@@ -14,6 +14,7 @@ setopt auto_cd
 setopt extendedglob
 setopt nomatch
 setopt notify
+setopt printexitvalue
 setopt prompt_subst
 
 unsetopt beep
