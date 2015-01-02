@@ -29,4 +29,7 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gcommit='git commit'
 
+# Pythonic scheisse
+alias clean-pyc='find . -name "*.pyc" -delete'
+
 alias rot13="tr a-zA-Z n-za-mN-ZA-M <<<"
