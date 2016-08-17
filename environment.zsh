@@ -12,6 +12,11 @@ SAVEHIST=10000
 
 # Some applications I use.
 export BROWSER=firefox
-export EDITOR=vim
+if which nvim > /dev/null 2>&1
+then
+  export EDITOR=nvim
+else
+  export EDITOR=vim
+fi
 export PAGER=less
-export VISUAL=vim
+export VISUAL=$EDITOR
