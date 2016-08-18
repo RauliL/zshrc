@@ -20,3 +20,10 @@ else
 fi
 export PAGER=less
 export VISUAL=$EDITOR
+
+# Load NVM, if it's installed.
+if test -f "$HOME/.nvm/nvm.sh"
+then
+  export NVM_DIR="$HOME/.nvm"
+  source "$NVM_DIR/nvm.sh"
+fi
